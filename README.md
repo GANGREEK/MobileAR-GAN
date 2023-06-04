@@ -20,15 +20,12 @@ pip install dominate
 ```
 - Clone this repo:
 ```bash
-git clone https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss
-cd CycleGANwithPerceptionLoss
+git clone https://github.com/GANGREEK/MobileAR-GAN.git
+cd MobileARGAN
 ```
 
-### CycleGAN train/test
-- Download a CycleGAN dataset (e.g. maps):
-```bash
-bash ./datasets/download_cyclegan_dataset.sh maps
-```
+### MobileARGAN train/test
+
 - Train a model:
 ```bash
 #!
@@ -42,9 +39,7 @@ python3 test.py --dataroot ./datasets/omsiv  --name omsiv --model MobileAR --no_
 ```
 The test results will be saved to a html file here: `./results/$dataset_Name$/latest_test/index.html`.
 
-### CycleGAN with perception loss
-First download the dataset and rename the two sets. For example rainy -> A, suny -> B. I have four folders in ./datasets/rainy_sunny/
-testA,  testB, trainA and trainB.
+
 
 - Training with the following parameters led to the best results;
 ```bash
